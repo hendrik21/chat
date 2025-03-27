@@ -16,7 +16,7 @@ import {NgClass, NgForOf} from '@angular/common';
 export class ChatbotComponent implements AfterViewChecked {
   /** Array con los mensajes del usuario y del bot */
   messages: { text: string, sender: 'user' | 'bot' }[] = [];
-  userInput: string = '';
+  userInput = '';
 
   /** Referencias a las burbujas añadidas al DOM */
   @ViewChildren('messageBubble', { read: ElementRef }) messageBubbles!: QueryList<ElementRef>;
